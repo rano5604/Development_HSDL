@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="12935" started-at="2019-08-08T07:25:35Z" finished-at="2019-08-08T07:25:48Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="12935" started-at="2019-08-08T07:25:35Z" finished-at="2019-08-08T07:25:48Z">
+      <class name="bioApplication.RunBioEnroll">
+        <test-method status="PASS" signature="NewInstance()[pri:0, instance:bioApplication.RunBioEnroll@21588809]" name="NewInstance" is-config="true" duration-ms="2515" started-at="2019-08-08T13:25:35Z" finished-at="2019-08-08T13:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewInstance -->
+        <test-method status="FAIL" signature="loginBioEnroll(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:bioApplication.RunBioEnroll@21588809]" name="loginBioEnroll" duration-ms="3220" started-at="2019-08-08T13:25:38Z" data-provider="user_data" finished-at="2019-08-08T13:25:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[s1_ope]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abc123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//192.168.1.201:3306/brta_old]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[root]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[tigerit]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.sikuli.script.FindFailed">
+            <message>
+              <![CDATA[Image/username.jpg: (222x43) in S(0)[0,0 1920x1080] E:Y, T:3.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[FindFailed: Image/username.jpg: (222x43) in S(0)[0,0 1920x1080] E:Y, T:3.0  Line 2782, in file Region.javaat org.sikuli.script.Region.wait(Region.java:2782)at org.sikuli.script.Region.find(Region.java:2329)at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)at org.sikuli.script.Region.click(Region.java:3736)at org.sikuli.script.Region.click(Region.java:3721)at bioApplication.LoginBioEnroll.Login(LoginBioEnroll.java:23)at bioApplication.RunBioEnroll.loginBioEnroll(RunBioEnroll.java:47)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at bioApplication.MainApplication.main(MainApplication.java:16)]]>
+            </full-stacktrace>
+          </exception> <!-- org.sikuli.script.FindFailed -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBioEnroll -->
+        <test-method status="PASS" signature="selectMainTask()[pri:2, instance:bioApplication.RunBioEnroll@21588809]" name="selectMainTask" duration-ms="753" started-at="2019-08-08T13:25:41Z" finished-at="2019-08-08T13:25:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMainTask -->
+        <test-method status="FAIL" signature="saveDraft(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:bioApplication.RunBioEnroll@21588809]" name="saveDraft" duration-ms="3054" started-at="2019-08-08T13:25:42Z" data-provider="test_data" finished-at="2019-08-08T13:25:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonsmart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[new_dl]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[No Subtask]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[HTESTRANO1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[non_prof]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[light]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[12/12/2010]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[01110111]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[threewheeler]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Comilla]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Chandina]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Ward no-01]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0909]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[01711084451]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.sikuli.script.FindFailed">
+            <message>
+              <![CDATA[Image/card_type.jpg: (184x42) in S(0)[0,0 1920x1080] E:Y, T:3.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[FindFailed: Image/card_type.jpg: (184x42) in S(0)[0,0 1920x1080] E:Y, T:3.0  Line 2782, in file Region.javaat org.sikuli.script.Region.wait(Region.java:2782)at org.sikuli.script.Region.find(Region.java:2329)at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)at org.sikuli.script.Region.click(Region.java:3736)at org.sikuli.script.Region.click(Region.java:3721)at bioApplication.TaskSelection.selectTask(TaskSelection.java:33)at bioApplication.RunBioEnroll.saveDraft(RunBioEnroll.java:63)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at bioApplication.MainApplication.main(MainApplication.java:16)]]>
+            </full-stacktrace>
+          </exception> <!-- org.sikuli.script.FindFailed -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveDraft -->
+        <test-method status="FAIL" signature="saveDraft(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:bioApplication.RunBioEnroll@21588809]" name="saveDraft" duration-ms="3019" started-at="2019-08-08T13:25:45Z" data-provider="test_data" finished-at="2019-08-08T13:25:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonsmart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[new_dl]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[No Subtask]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[HTESTRANO2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[prof]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[light]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[12/12/2010]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[01110113]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[threewheeler]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Comilla]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Chandina]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Ward no-01]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0909]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[01711084451]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.sikuli.script.FindFailed">
+            <message>
+              <![CDATA[Image/card_type.jpg: (184x42) in S(0)[0,0 1920x1080] E:Y, T:3.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[FindFailed: Image/card_type.jpg: (184x42) in S(0)[0,0 1920x1080] E:Y, T:3.0  Line 2782, in file Region.javaat org.sikuli.script.Region.wait(Region.java:2782)at org.sikuli.script.Region.find(Region.java:2329)at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)at org.sikuli.script.Region.click(Region.java:3736)at org.sikuli.script.Region.click(Region.java:3721)at bioApplication.TaskSelection.selectTask(TaskSelection.java:33)at bioApplication.RunBioEnroll.saveDraft(RunBioEnroll.java:63)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at bioApplication.MainApplication.main(MainApplication.java:16)]]>
+            </full-stacktrace>
+          </exception> <!-- org.sikuli.script.FindFailed -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveDraft -->
+      </class> <!-- bioApplication.RunBioEnroll -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

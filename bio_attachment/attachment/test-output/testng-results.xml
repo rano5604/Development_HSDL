@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1655" started-at="2018-06-26T05:34:00Z" finished-at="2018-06-26T05:34:02Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1655" started-at="2018-06-26T05:34:00Z" finished-at="2018-06-26T05:34:02Z">
+      <class name="bioApplication.RunBioEnroll">
+        <test-method status="PASS" signature="NewInstance()[pri:0, instance:bioApplication.RunBioEnroll@21588809]" name="NewInstance" is-config="true" duration-ms="1632" started-at="2018-06-26T11:34:00Z" finished-at="2018-06-26T11:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewInstance -->
+        <test-method status="SKIP" signature="loginBioEnroll(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:bioApplication.RunBioEnroll@21588809]" name="loginBioEnroll" duration-ms="0" started-at="2018-06-26T11:34:02Z" data-provider="user_data" finished-at="2018-06-26T11:34:02Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerExceptionat org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)at org.testng.internal.Parameters.handleParameters(Parameters.java:706)at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at bioApplication.MainApplication.main(MainApplication.java:16)Caused by: java.lang.NullPointerExceptionat bioApplication.ExcelDataConfig.getRowCount(ExcelDataConfig.java:40)at bioApplication.RunBioEnroll.passUserData(RunBioEnroll.java:102)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)... 20 more]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBioEnroll -->
+        <test-method status="FAIL" signature="selectMainTask()[pri:2, instance:bioApplication.RunBioEnroll@21588809]" name="selectMainTask" duration-ms="2" started-at="2018-06-26T11:34:02Z" finished-at="2018-06-26T11:34:02Z">
+          <exception class="java.lang.ThreadDeath">
+            <full-stacktrace>
+              <![CDATA[java.lang.ThreadDeathat java.lang.Thread.stop(Unknown Source)at org.sikuli.script.RunTime.abortScripting(RunTime.java:71)at org.sikuli.script.Region.wait(Region.java:2751)at org.sikuli.script.Region.find(Region.java:2329)at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)at org.sikuli.script.Region.click(Region.java:3736)at org.sikuli.script.Region.click(Region.java:3721)at bioApplication.TaskSelection.selectMainCategory(TaskSelection.java:25)at bioApplication.RunBioEnroll.selectMainTask(RunBioEnroll.java:54)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at bioApplication.MainApplication.main(MainApplication.java:16)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ThreadDeath -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMainTask -->
+        <test-method status="SKIP" signature="saveDraft(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:bioApplication.RunBioEnroll@21588809]" name="saveDraft" duration-ms="0" started-at="2018-06-26T11:34:02Z" data-provider="test_data" finished-at="2018-06-26T11:34:02Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerExceptionat org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)at org.testng.internal.Parameters.handleParameters(Parameters.java:706)at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at bioApplication.MainApplication.main(MainApplication.java:16)Caused by: java.lang.NullPointerExceptionat bioApplication.ExcelDataConfig.getRowCount(ExcelDataConfig.java:40)at bioApplication.RunBioEnroll.passData(RunBioEnroll.java:85)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)... 20 more]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveDraft -->
+      </class> <!-- bioApplication.RunBioEnroll -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

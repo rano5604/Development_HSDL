@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">12,935</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">bioApplication.RunBioEnroll</td><td><a href="#m0">loginBioEnroll</a></td><td rowspan="1">1565249138085</td><td rowspan="1">3220</td></tr><tr class="failedeven"><td><a href="#m1">saveDraft</a></td><td rowspan="2">1565249142089</td><td rowspan="2">3054</td></tr><tr class="failedeven"><td><a href="#m2">saveDraft</a></td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">bioApplication.RunBioEnroll</td><td><a href="#m3">selectMainTask</a></td><td rowspan="1">1565249141306</td><td rowspan="1">753</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">bioApplication.RunBioEnroll#loginBioEnroll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>s1_ope</td><td>Abc123</td><td>//192.168.1.201:3306/brta_old</td><td>root</td><td>tigerit</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">FindFailed: Image/username.jpg: (222x43) in S(0)[0,0 1920x1080] E:Y, T:3.0
+  Line 2782, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2782)
+	at org.sikuli.script.Region.find(Region.java:2329)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
+	at org.sikuli.script.Region.click(Region.java:3736)
+	at org.sikuli.script.Region.click(Region.java:3721)
+	at bioApplication.LoginBioEnroll.Login(LoginBioEnroll.java:23)
+	at bioApplication.RunBioEnroll.loginBioEnroll(RunBioEnroll.java:47)
+	at bioApplication.MainApplication.main(MainApplication.java:16)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">bioApplication.RunBioEnroll#saveDraft</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th></tr><tr class="param stripe"><td>nonsmart</td><td>new_dl</td><td>No Subtask</td><td>HTESTRANO1</td><td>non_prof</td><td>light</td><td>12/12/2010</td><td>01110111</td><td>threewheeler</td><td>Comilla</td><td>Chandina</td><td>Ward no-01</td><td>0909</td><td>Test</td><td>01711084451</td></tr><tr><th colspan="15">Exception</th></tr><tr><td colspan="15"><div class="stacktrace">FindFailed: Image/card_type.jpg: (184x42) in S(0)[0,0 1920x1080] E:Y, T:3.0
+  Line 2782, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2782)
+	at org.sikuli.script.Region.find(Region.java:2329)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
+	at org.sikuli.script.Region.click(Region.java:3736)
+	at org.sikuli.script.Region.click(Region.java:3721)
+	at bioApplication.TaskSelection.selectTask(TaskSelection.java:33)
+	at bioApplication.RunBioEnroll.saveDraft(RunBioEnroll.java:63)
+	at bioApplication.MainApplication.main(MainApplication.java:16)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">bioApplication.RunBioEnroll#saveDraft</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th></tr><tr class="param stripe"><td>nonsmart</td><td>new_dl</td><td>No Subtask</td><td>HTESTRANO2</td><td>prof</td><td>light</td><td>12/12/2010</td><td>01110113</td><td>threewheeler</td><td>Comilla</td><td>Chandina</td><td>Ward no-01</td><td>0909</td><td>Test</td><td>01711084451</td></tr><tr><th colspan="15">Exception</th></tr><tr><td colspan="15"><div class="stacktrace">FindFailed: Image/card_type.jpg: (184x42) in S(0)[0,0 1920x1080] E:Y, T:3.0
+  Line 2782, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2782)
+	at org.sikuli.script.Region.find(Region.java:2329)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
+	at org.sikuli.script.Region.click(Region.java:3736)
+	at org.sikuli.script.Region.click(Region.java:3721)
+	at bioApplication.TaskSelection.selectTask(TaskSelection.java:33)
+	at bioApplication.RunBioEnroll.saveDraft(RunBioEnroll.java:63)
+	at bioApplication.MainApplication.main(MainApplication.java:16)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">bioApplication.RunBioEnroll#selectMainTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

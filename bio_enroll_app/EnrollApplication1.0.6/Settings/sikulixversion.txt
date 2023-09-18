@@ -1,0 +1,11 @@
+sikulixvmaj=1
+sikulixvmin=1
+sikulixvsub=2
+sikulixbeta=0
+sikulixbuild=2018-03-08_08:37
+sikulixdev=development
+sikulixvused=1.1.2-SNAPSHOT
+sikulixvproject=1.1.2-SNAPSHOT
+sikulixvjython=2.7.1
+sikulixvjruby=9.1.15.0
+sikulixlocalrepo=/home/travis/.m2/repository

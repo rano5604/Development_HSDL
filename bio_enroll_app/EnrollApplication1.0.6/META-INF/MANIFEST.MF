@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Class-Path: .
+Main-Class: bioApplication.MainApplication
+
+Name: org/apache/xmlbeans/
+Implementation-Title: org.apache.xmlbeans
+Comment: Apache XmlBeans version 2.6.0-r1364789
+Implementation-Version: 2.6.0-r1364789
+Implementation-URL: http://xmlbeans.apache.org/
+Implementation-Vendor: Apache Software Foundation
+
